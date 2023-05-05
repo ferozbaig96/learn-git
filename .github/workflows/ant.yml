@@ -10,7 +10,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  job-1:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Echo string
+      run: echo "Inside JOB 1"
+  job-2:
 
     runs-on: ubuntu-latest
 
